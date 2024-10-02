@@ -1,14 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
 
 function App() {
-  const [text, setText] = useState("");
-
   return (
     <div className="App">
-      <input type="text" onChange={(e) => setText(e.target.value)}></input>
-      <button onClick={() => {console.log(text)}}>hoge</button>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          WELCOME TO EASYDEPLOY
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
